@@ -1,0 +1,104 @@
+.title{
+    top: 0;
+    left: 25%;
+    font-size: 50px;
+    animation: move 2s ease-in;
+    position: absolute;
+}
+@keyframes move {
+0%{
+    left: 0%;
+}
+100%{
+    left: 25%;
+}
+}
+.quote{
+    position: absolute;
+    text-align: center;
+    font-size: medium;
+    left: 20%;
+    top: 10%;
+    animation: text 2s ease-in;
+}
+@keyframes text {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 20%;
+    }
+}
+.grid {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute ;
+    top: 25% ;
+    left: 19% ;
+    gap: 80px ;
+    animation: grid 2s ease-in;
+}
+@keyframes grid {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 20%;
+    }
+}
+.big {
+    font-size: 40px ;
+    color: rgb(62, 99, 168);
+}
+.ul{
+    font-size: 30px;
+}
+.ul2{
+    font-size: 30px;
+}
+@media screen and (max-width : 1111px) {
+   .quote{
+    top: 20%;
+   }
+}
+@media screen and (max-width : 727px) {
+   .big{
+    font-size: 30px ;
+   }
+ }
+ @media screen and (max-width : 622px) {
+    .quote{
+        top: 35% ;
+    }
+    .big{
+        margin-top: 150px ;
+    }
+  }
+  @media screen and (max-width : 575px) {
+.grid{
+    display: inline;
+}
+  }
+  @media screen and (max-width : 487px) {
+    .quote{
+        top: 40%;
+    }
+    .big{
+        margin-top: 200px ;
+    }
+  }
+  @media screen and (max-width : 334px) {
+    .quote{
+        top: 50%;
+    }
+    .big{
+        margin-top: 350px ;
+    }
+    .ul{
+        font-size: 15px ;
+    }
+    .ul2{
+        font-size: 15px ;
+    }
+  }

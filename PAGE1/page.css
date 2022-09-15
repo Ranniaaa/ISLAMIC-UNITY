@@ -1,0 +1,254 @@
+
+body{ display: flex;
+  width: auto;
+background-image: linear-gradient(45deg , rgb(201, 193, 193), rgb(141, 189, 141));}
+.islamic{
+    position: absolute;
+    top: 30%;
+    left:55%;
+    font-size: 50px;
+   /* animation: text 1.5s ease-in-out infinite ;*/
+    animation: right 3s ease-in;
+    text-shadow: 2px white ;
+}
+@keyframes right {
+  0%{
+    left: 100% ;
+  }
+  100% {
+    left: 55%  ;
+  }
+}
+.logo{ 
+    position: absolute;
+    top: 0%;
+    left: 20%;
+  width: 400px ;
+    transition: 3s ease;
+    cursor: pointer;
+  
+animation: left 1s ease-in;
+    animation-delay: 0s;
+   /* visibility: hidden;*/
+    animation-fill-mode: forwards;
+}
+@keyframes left {
+  0%{
+    left: 0%;
+  }
+  100%{
+    left: 20% ;
+  }
+}
+@keyframes zoomin {
+    0%{
+        transform: scale(0.5);
+        visibility: visible;
+    }
+    100%{
+        transform: scale(0.7);
+        visibility: visible;
+ }   
+}
+.line{
+    border-left: 6px solid green;
+    position: absolute;
+    height: 300px;
+    top: 25%;
+    left: 52%;
+    animation: line 2s ;
+}
+@keyframes line {
+  0%{
+    opacity: 0;
+    top: 0%;
+  }
+  100%{
+    top: 25%;  
+  }
+}
+
+@keyframes move {
+    0%{margin-right: 0;}
+    50%{margin-right: 100px;}
+    100%{margin-right: 0;}
+}
+@keyframes text {
+    0%{ font-size: 0px; text-shadow: 1px 1px rgb(155, 98, 13);}
+    20%{ font-size: 20px; text-shadow: 1px 1px rgb(206, 171, 58);}
+    50%{ font-size: 30px;text-shadow:1px 1px rgb(238, 223, 91) ;}
+    100%{ font-size: 60px; text-shadow: 1px 1px white;  }
+    
+
+}
+.aya{  
+position: absolute;
+top: 90%;
+justify-content: center;
+align-items: center;
+text-align: center;
+left: 33%;
+font-size: 20px;
+animation: bottom 3s ease-in;
+}
+@keyframes bottom {
+  0% {
+    top: 100%;
+  }
+  100%{
+    top: 90%  ;
+  }
+}
+
+/*ta3 button */
+html, body {
+    height: 100%;
+  }
+  
+  .wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 95% ;
+  }
+  
+  .button {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;left: 800px;
+    min-width: 300px;
+    min-height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313131;
+    background: white;
+  background: rgb(93, 131, 93);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    animation: radius 5s ease-in;
+    }
+    @keyframes radius {
+      0% {
+        visibility:hidden ;
+        border-radius: 50% ;
+        padding: 1px ;
+        width: 20px ;
+      }
+      100% {
+        visibility: visible;
+    
+      }
+    }
+  
+  button::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid;
+    box-shadow: 0 0 60px white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .button:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid white;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+  @media (max-width: 1109px ) {
+    .line{
+      display: none ;
+    }
+  }
+  @media (max-width: 982px ) {
+   
+  }
+  @media (max-width: 858px ) {
+    .button{
+     position: absolute;
+     left: 60% ;
+     top: 80%;
+    }
+  }
+  @media (max-width: 582px ) {
+    .islamic{
+     top: 65% ;
+     left: 30% ;
+    }
+    .button{
+      top: 95% ;
+    }
+    .logo{
+width: 50px ;
+    }
+    .aya{
+top: 700px ;
+    }
+    @keyframes bottom {
+      0%{
+       top: 800px 
+      }
+
+    }
+    @media (max-width: 315px ) {
+      .islamic {
+       font-size: 40px ;
+       left: 10% ;
+      }
+      .aya{
+        font-size: 18px ;
+        left: 10% ;
+      }
+    }
+    
+  }

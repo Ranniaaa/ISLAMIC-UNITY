@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    color: brown;
+    position: absolute;
+    top: 0%;
+    font-size: 50px ;
+left: 30% ;
+    animation: right 3s ease-in;
+}
+@keyframes right {
+    0%{
+      left: 100% ;
+      font-size: 50px ;
+    }
+    10%{
+        font-size: 50px ;  
+    }
+    100% {
+      left: 55%  ;
+    }
+}
+h5{
+    top: 10%;
+    position: absolute;
+    color: blue;
+   
+}
+p{
+    top: 20% ;
+    position: absolute;
+    font-size: larger;
+    animation: left 2s ;
+}
+@keyframes left  { 
+    0% { 
+ display: NONE ;
+    }
+}

@@ -1,0 +1,178 @@
+.box1{
+    width: 90% ;
+    min-height: 200px;
+    background-color: transparent;
+    position: relative;
+    left: 100px;
+    top: 180px;
+   direction: rtl; 
+   background-color: transparent;
+   border: 2px solid rgb(192, 189, 189);
+    margin-bottom: 20px ;
+    border-radius: 10px ;
+
+
+}
+.zoom {
+    transition: transform .2s; /* Animation */
+   animation: fix 2s ease;
+    
+    
+    margin: 0 auto ;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+.return{
+    border-style: hidden;
+    position: fixed;
+/*position: absolute;*/
+right: 5%;
+top: 4%;
+padding-left: 20px ;
+padding-right: 20px ;
+border-radius: 50px ;
+background: linear-gradient(#f1c484,#d3ddbd);
+}
+
+.nav {
+    
+      
+      
+      color: rgb(250, 249, 249) ;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+     background-color: rgb(110, 100, 100);
+      position: static;
+      height: 100px  ;
+      text-align: center;
+      font-size: 30px ;
+    }
+    .h2{
+        animation: adkar 3s ease-in;
+    }
+    @keyframes adkar {
+        0%{
+margin-top: 0%;
+        }
+    
+    }
+.mini-box{
+    width: 160px;
+    height: 160px;
+    background-color: rgb(54, 121, 184);
+    position: absolute;
+    right: 23px;
+top: 20px;
+border-radius: 20%;
+}
+.p{
+    font-size: 20px;
+    padding-right: 200px;
+    font-weight: 600;
+    font-size: xx-large;
+    padding-top: 70px ;
+}
+.text{
+    font-size: xx-large;
+    padding-right: 200px;
+    top: 0%;
+    position: absolute;
+    color: rgb(172, 132, 83);
+}
+.exo {
+    padding-top: 0px;
+}
+.large2{
+    top: 20%;
+    height: 200px ;
+}
+.asbahna{
+    min-height: 200;
+}
+.masdar{
+    font-weight: 700;
+    padding-right: 200px ;
+    color:rgb(54, 121, 184) ;
+}
+.big{
+    height: 400px ;
+
+}
+.large{
+    height: 270px ;
+}
+.large3{
+    height: 50px ;
+}
+
+
+.scroller {
+    width: 500px;
+    margin-right: 70px ;font-size: 25px ;right: 50%;
+    height: 55px;
+    overflow-y: scroll;
+    scrollbar-color: rgb(158, 197, 248);
+    scrollbar-width: thin;
+  }
+  .exo2{
+    top: 30%;
+  }
+  .num{
+    font-size: 80px;padding-right: 20px ;margin-bottom: 100px ;color: white;
+  }
+  @media screen and (max-width : 994px) {
+    .box1{
+        width: 80% ;
+        
+    }
+}
+@media screen and (max-width : 994px) {
+    .box1{
+        width: 80% ;
+       
+       
+    }
+}
+@media screen and (max-width : 900px) {
+    .box1{
+        width: 80% ;   
+    }
+    .p{
+        font-size: 18px ;
+    }
+    .masdar{
+        font-size: 18px ;
+    }
+    .big{ height: 300px ;}
+
+}
+@media screen and (max-width : 635px) {
+    .text{
+        font-size: x-large;
+     }
+     .scroller{
+        width: 200px ;
+     }
+}
+@media screen and (max-width : 503px) {
+   .box1{
+    height: 300px ;
+   }
+}
+@media screen and (max-width : 327px) {
+    .text{
+        font-size: x-small;
+    }
+    .p{
+        font-size: 5px ;
+    }
+.mini-box{
+    width: 50px ;
+    height: 50px ;
+}
+ }
+ 
